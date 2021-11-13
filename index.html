@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <style>
+        .userinput {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .main
+        {
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #one{
+              margin-top: 20px;
+        }
+        #one:hover{
+            opacity: .3;
+        }
+    </style>
+    <script>
+        function buttonclick(id) {
+            var inputFromUser = prompt("Enter a Value", "404")
+            var inputText = document.getElementById('input')
+            inputText.value = inputFromUser
+        }
+    </script>
+</head>
+
+<body>
+    
+    <div class="userinput">
+        <h2>User input Page</h2>
+        <div class="main">
+            <input type="text" id="input">
+            <button id="one" onclick="buttonclick('one')">Click here to input</button>
+        </div>
+    </div>
+</body>
+
+</html>
